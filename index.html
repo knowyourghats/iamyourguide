@@ -1,116 +1,197 @@
 <html>
-	<head>
-	<meta charset="utf-8"> 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Ganga</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"	></script>
-	<link rel="stylesheet" href="style.css"/>
-	</head>
-	<body>
-		<div class="navbar">
-			<a href="#" class="btn">
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-			</a>
-			<div class="menu">
-				<a href="#">Home</a>
-				<a href="#">Images</a>
-				<a href="#">Videos</a>
-				<a href="#">Ghats</a>
-			</div>
-		</div>
-		<div id="gangadiv" class="gangadiv">
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-				  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				  <li data-target="#myCarousel" data-slide-to="1"></li>
-				  <li data-target="#myCarousel" data-slide-to="2"></li>
-				  <li data-target="#myCarousel" data-slide-to="3"></li>
-				  <li data-target="#myCarousel" data-slide-to="4"></li>
-				  <li data-target="#myCarousel" data-slide-to="5"></li>
-				</ol>
-			<div class="carousel-inner">
-				<div class="item active">
-					<img src="./images/ganga1.jpg" alt="Chania">
-					<div class="carousel-caption">
-					  <h3>Chania</h3>
-					  <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-					</div>
-				</div>
-				<div class="item">
-					<img src="./images/ganga2.jpg" alt="Chania">
-					<div class="carousel-caption">
-					  <h3>Chania</h3>
-					  <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-					</div>
-				</div>
-				<div class="item">
-					<img src="./images/ganga3.jpg" alt="Chania">
-					<div class="carousel-caption">
-					  <h3>Chania</h3>
-					  <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-					</div>
-				</div>
-				<div class="item">
-					<img src="./images/ganga4.jpg" alt="Chania">
-					<div class="carousel-caption">
-					  <h3>Chania</h3>
-					  <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-					</div>
-				</div>
-				<div class="item">
-					<img src="./images/ganga5.jpg" alt="Chania">
-					<div class="carousel-caption">
-					  <h3>Chania</h3>
-					  <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-					</div>
-				</div>
-				<div class="item">
-					<img src="./images/ganga6.jpg" alt="Chania">
-					<div class="carousel-caption">
-						<h3>Chania</h3>
-						<p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-					</div>
-				</div>
-			</div>
-			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-			  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			  <span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-			  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			  <span class="sr-only">Next</span>
-			</a>
-		  </div>
-		</div>
-		<div id="attractions">
-			<div class="dtitle">
-			</div>
-			<div id="attractions-list">
-			</div>
-		</div>
-		<div id="extra-info">
-			<div class="dtitle">
-			</div>
-			<div id="things-to-do" class="infodiv">
-			</div>
-			<div id="interesting-facts" class="infodiv">
-			</div>
-		</div>
-		<div id="ganga-map" class="col-md-8 col-sm-8">
-		</div>
-	
-	<div id="footer" class="col-md-12 col-sm-12">
-	</div>
-		<script type="text/javascript">
-		$(".btn").on("click",function(){
-			$(".menu").toggleClass("show");
-		});
-		</script>
-	</body>
+    <title>Ganga</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#" class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Images</a>
+            <a href="#">Videos</a>
+            <a href="#">Ghats</a>
+        </div>
+    </div>
+    <div id="gangadiv" class="gangadiv">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="./images/ganga1.jpg" alt="Chania">
+                    <div class="carousel-caption">
+                        <h1 id="gh">Varanasi</h1>
+                        <h3 id="gc">A Devotional place to clean up our sins.</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/ganga2.jpg" alt="Chania">
+                    <div class="carousel-caption">
+                        <h1 id="gh">Flora and Fauna</h1>
+                        <h3 id="gc">Ganga is birth place to many plants and animals.</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/ganga3.jpg" alt="Chania">
+                    <div class="carousel-caption">
+                        <h1 id="gh">Ganga</h1>
+                        <h3 id="gc">The most peaceful and coolest place to enjoy the nature.</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/ganga4.jpg" alt="Chania">
+                    <div class="carousel-caption">
+                        <h1 id="gh">Kumbh Mela</h1>
+                        <h3 id="gc">It is a major pilgrimage and festival in Hinduism, celebrated every 12 years.</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/ganga5.jpg" alt="Chania">
+                    <div class="carousel-caption">
+                        <h1 id="gh">Pollution</h1>
+                        <h3 id="gc">Ganga is becoming a highly polluted river day by day.</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/ganga6.jpg" alt="Chania">
+                    <div class="carousel-caption">
+                        <h1 id="gh">Clean ganga</h1>
+                        <h3 id="gc">It is the project took up by government to clean Ganga.</h3>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div id="attractions">
+        <div class="atitle">
+            <h1 class="hd heading heading-correct-pronounciation">Destinations</h1>
+        </div>
+        <div id="attractions-list">
+            <div class="card" onclick="window.open('destination_data.php?id=1')">
+                <div class="front" style="background-image: url('images/destinations/d1.jpg');background-repeat:no-repeat;background-size: cover;">
+                    <h2>Sarnath Temple</h2>
+                </div>
+                <div class="back">
+                    <h3>Sarnath Temple is the scared place where Lord Buddha delivered his first sermon to his five disciples, who was preaching the middle path for attaining 'Nirvana'.</h3>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('destination_data.php?id=2')">
+                <div class="front" style="background-image: url('images/destinations/d2.jpg');background-repeat:no-repeat;background-size: cover;">
+                    <h2>Kashi Vishwanath Temple</h2>
+                </div>
+                <div class="back">
+                    <h3>Kashi Vishwanath Temple is one of the most famous Hindu temples dedicated to Lord Shiva. The Temple stands on the western bank of the holy river Ganga, and is one of the twelve Jyotirlingas, the holiest of Shiva Temples.</h3>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('destination_data.php?id=3')">
+                <div class="front" style="background-image: url('images/destinations/d3.jpg');background-repeat:no-repeat;background-size: cover;">
+                    <h2>Tera Manzil Temple</h2>
+                </div>
+                <div class="back">
+                    <h3>Tera Manzil Temple is a 13 storey temple and the largest temple in Rishikesh. Also known as Trimbakeshwar Temple, the temple is not dedicated to a single deity but different gods and goddesses.</h3>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('destination_data.php?id=4')">
+                <div class="front" style="background-image: url('images/destinations/d4.jpg');background-repeat:no-repeat;background-size: cover;">
+                    <h2>Rajaji National Park</h2>
+                </div>
+                <div class="back">
+                    <h3>Rajaji National Park is an Indian national park and tiger reserve that encompasses the Shivaliks, near the foothills of the Himalayas. The park is spread over three districts of Uttarakhand: Haridwar, Dehradun and Pauri Garhwal.</h3>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('destination_data.php?id=5')">
+                <div class="front" style="background-image: url('images/destinations/d5.jpg');background-repeat:no-repeat;background-size: cover;">
+                    <h2>Vaishno Devi Temple</h2>
+                </div>
+                <div class="back">
+                    <h3>Vaishno Devi is a manifestation of the Hindu Goddess Mata Adi Shakti/Adi Parashakti. The words "Maa" and "Mata" are commonly used in India for mother, and thus are often heavily used in connection with Vaishno Devi.</h3>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('destination_data.php?id=6')">
+                <div class="front" style="background-image: url('images/destinations/d6.jpg');background-repeat:no-repeat;background-size: cover;">
+                    <h2>Khusro Bagh</h2>
+                </div>
+                <div class="back">
+                    <h3>Khusrau Bagh is a large walled garden and burial complex located in muhalla Khuldabad close to the Allahabad Junction railway station, in Prayagraj, India. It is roughly 6 kms from the Akbar fort built in.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="extra-info">
+        <div class="dtitle">
+            <h1 class="hd heading heading-correct-pronounciation">Things to know</h1>
+        </div>
+        <div class="info">
+            <div id="things-to-do" class="infodiv">
+                <div id="ititle">
+                    <h2><b>Things To Do</b></h2>
+                </div>
+                <div id="eicontent">
+                    <h2 class="tcontent"> Take a Holy Bath in Ganges</h2>
+                    <h2 class="tcontent"> River ratfing at Rishikesh</h2>
+                    <h2 class="tcontent"> Attend the Ganga Aarti in Rishikesh</h2>
+                    <h2 class="tcontent"> Morning Boat Ride in Ganges River</h2>
+                    <h2 class="tcontent"> Bungee Jumping at Haridwar</h2>
+                    <h2 class="tcontent"> Wildlife jungle safari</h2>
+                    <h2 class="tcontent"> Boating at the Triveni sangamam</h2>
+                    <h2 class="tcontent"> Dolphin Watching</h2>
+                    <h2 class="tcontent"> Visit Historical Ramnagar Fort</h2>
+                </div>
+            </div>
+            <div id="interesting-facts" class="infodiv">
+                <div id="ititle">
+                    <h2><b>Interesting Facts</b></h2>
+                </div>
+                <div id="eicontent">
+                    <h2 class="tcontent"> Ganga is the third largest river in the world by discharge</h2>
+                    <h2 class="tcontent"> It is formed by the confluence of the rivers Bhagirathi and Alakananda</h2>
+                    <h2 class="tcontent"> The ganges has higher proportion of antibacterial agents</h2>
+                    <h2 class="tcontent"> The Ganges is home to over 100 different species of fish and more than 50 different types of amphibian</h2>
+                    <h2 class="tcontent"> The Ganges river basin has over 400 million people</h2>
+                    <h2 class="tcontent"> The Ganges River is actually shifting its course. It has shifted 2.5 KM in Bihar since 1990</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gangamap" class="gangamap">
+        <a href="gmap.html" target="_blank"><img src="images/gangamap.jpg" height=100% width=100%/></a>
+    </div>
+    <div id="footer">
+    </div>
+    <script type="text/javascript">
+        $(".btn").on("click", function() {
+            $(".menu").toggleClass("show");
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
 </html>
