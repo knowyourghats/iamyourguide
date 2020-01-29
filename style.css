@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=EB+Garamond|Cardo:400italic);
 body {
     font-family: serif;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -60,7 +61,7 @@ p {
 }
 
 .container {
-    margin-top: 10%;
+    margin-top: 0%;
 }
 
 #gangadiv {
@@ -318,6 +319,39 @@ p {
     width: 450px;
     margin: 15px auto;
     border: 1px solid black;
+}
+.stl{
+    height: 350px;
+    width: 600px;
+    display: block;
+    text-decoration: none;
+    margin: 20px auto;
+}
+.stl-div{
+    height: 100%;
+    width: 100%;
+}
+.stl-head{
+    font-size: 3em;
+    text-align:center;
+}
+.cd{
+    width:60%;
+    margin: 3% auto;
+}
+.imgd{
+    height: 200px;
+    width: 200px;
+    margin:10px;
+    float: left;
+}
+.imgdiv{
+    height:100%;
+    width:100%;
+}
+.mfp-img{
+    height:600px;
+    width:600px;
 }
 
 @media only screen and (max-width: 768px) {

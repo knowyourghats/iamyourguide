@@ -1,7 +1,7 @@
 <?php
 	$id=$_GET['id'];
-	$con=mysqli_connect("127.0.0.1","root","","imgdb") or die("ERROR: Could not connect.");
-	$sql="SELECT * FROM images WHERE sno='$id'";
+	$con=mysqli_connect("127.0.0.1","root","","projectdb") or die("ERROR: Could not connect.");
+	$sql="SELECT * FROM destimages WHERE sno='$id'";
 	$res=mysqli_query($con,$sql) or die("Error: " . mysqli_error($con));
 	$row=mysqli_fetch_array($res);
 ?>
