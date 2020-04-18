@@ -26,7 +26,7 @@
             <a href="index.html">Home</a>
             <a href="images.php">Images</a>
             <a href="videos.php">Videos</a>
-            <a href="#">Ghats</a>
+            <a href="main.html">Ghats</a>
         </div>
     </div>
     <div class="container">
