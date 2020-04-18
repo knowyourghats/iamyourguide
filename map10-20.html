@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<style> 
+	#map { 
+		height: 500px; 
+		width: 100%; 
+	} 
+	</style> 
+</head> 
+<body> 
+	<h3>GFG Google Maps Demo</h3> 
+	<div id="map"></div> 
+	<script> 
+	function initMap() { 
+	//25.3176° N, 82.9739° E
+		var raja={lat: 25.3030, lng:83.0082};
+		<!--var ram={lat: 28,4861,lng:81.7404};
+		var nishad = {lat: 25.3221, lng:83.0289}; 
+		var niranjani = {lat: 25.2958, lng:83.0071};
+		var chilla = {lat: 25.766365, lng:80.531342};
+		var dandi = {lat : 25.2969, lng:83.0073};
+		var hanuman ={lat : 25.2975, lng: 83.0064};
+		var kedar={lat: 25.2989, lng: 83.0074};
+		var darbhanga={lat: 25.3052, lng:83.0097};
+		var munshi={lat: 25.3055, lng:83.0099};
+		var manmandir={lat: 25.3077, lng:83.0111};
+		var nepali={lat:26.2287, lng:93.0346};
+		var lalita = {lat:25.3100, lng: 83.0133};
+		var map = new google.maps.Map(document.getElementById('map'), {zoom: 14.8, center: darbhanga }); 
+		var marker = new google.maps.Marker({position: niranjani, map: map }); 
+		var marker = new google.maps.Marker({position: nishad, map: map});
+		var marker = new google.maps.Marker({position: chilla, map: map }); 
+		var marker = new google.maps.Marker({position: dandi, map: map });
+		var marker = new google.maps.Marker({position: hanuman, map: map });
+		var marker = new google.maps.Marker({position: kedar, map: map });
+		var marker = new google.maps.Marker({position: darbhanga, map: map });
+		var marker = new google.maps.Marker({position: munshi, map: map });
+		var marker = new google.maps.Marker({position: manmandir, map: map });
+		var marker = new google.maps.Marker({position: nepali, map: map });
+		var marker = new google.maps.Marker({position: lalita, map: map });
+	} 
+	</script> 
+	<script async defer 
+	src= 
+"https://maps.googleapis.com/maps/api/js?key= 
+AIzaSyB2bXKNDezDf6YNVc-SauobynNHPo4RJb8&callback=initMap"> 
+	</script> 
+</body> 
+</html> 

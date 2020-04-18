@@ -1,439 +1,53 @@
-@import url(https://fonts.googleapis.com/css?family=EB+Garamond|Cardo:400italic);
-body {
-    font-family: serif;
-    overflow-x: hidden;
+input[type="text"]{
+width : 300px;;
 }
-
-.navbar {
-    position: fixed;
-    height: 10%;
-    overflow: hidden;
-    top: 0;
-    display: flex;
-    align-items: center;
-    background: rgb(240, 241, 248);
-    width: 100%;
-    z-index: 2;
+#p
+{
+	width:100%;
+	font-size:20px;
+        font-style:italic;
+word-spacing: 5px;
+	font-family:"Times New Roman", Times, serif;
 }
-
-.menu {
-    position: absolute;
-    right: 20px;
+img{
+	height:480px;
+	width:100%;
 }
-
-.menu a {
-    color: #333;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 700;
-    margin-left: 20px;
-    border-radius: 10px;
-    transition: color 0.3s;
+.top_btn:hover
+{
+	height:37px;
+	width: 75px;
+	margin-right:10px;
+	font-size: 1.1em;
+	box-shadow: 1px 1px 1px 1px black;
+	cursor: pointer;
+	opacity: 0.8;
 }
-
-.menu a:hover {
-    color: #6ab04c;
-    text-shadow: 0.1px 0px 0px green;
+.top_btn
+{
+	color: black;
+	border-radius: 20%;
+	height: 35px;
+	width: 100px;
+	text-align:center;
+	font-size: 1em;
+	margin: 0px 15px;
+	opacity: 0.6;
+	align-content:center;
 }
-
-p {
-    padding: 20px;
-    font-size: 20px;
-    text-align: justify;
-}
-
-.btn {
-    display: none;
-    position: absolute;
-    right: 20px;
-}
-
-.btn:hover>span {
-    background: #6ab04c;
-}
-
-.btn span {
-    display: block;
-    margin: 6px;
-    width: 40px;
-    height: 3px;
-    background: #333;
-}
-
-.container {
-    margin-top: 0%;
-}
-
-#gangadiv {
-    height: 100%;
-    width: 100%;
-}
-
-.carousel-inner>.item>a>img,
-.carousel-inner>.item>img {
-    width: 100%;
-    height: 100%;
-}
-#gh {
-    font-family: 'EB Garamond', serif;
-    font-size: 3em;
-    color: red;
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: 0.01em;
-    text-shadow: 5px 5px 10px yellow;
-}
-#gc {
-    font-family: 'EB Garamond', serif;
-    font-size: 3em;
-    color: blue;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    word-spacing: 0.3em;
-    text-shadow: 5px 5px 10px orange;
-}
-
-#attractions {
-    height: 90%;
-    width: 100%;
-    margin: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-.atitle {
-    height: 15%;
-    width: 100%;
-    padding: 10px;
-    align-items: center;
-}
-
-.heading-correct-pronounciation {
-    text-align: center;
-    position: relative;
-}
-
-.hd {
-    font-family: 'EB Garamond', serif;
-    font-size: 2em;
-    color: purple;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 0.01em;
-    text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
-}
-
-.hd::before,
-.hd::after {
-    content: "§";
-    display: inline-block;
-    transform: rotate(90deg);
-    opacity: 0.9;
-    margin: 0.5em 0.5em 1em;
-    font-size: 0.7em;
-}
-
-#attractions-list {
-    margin: auto;
-    height: 90%;
-    width: 70%;
-    padding-left: 10px;
-}
-
-.card {
-    margin: 10px;
-    display: inline-block;
-    position: relative;
-    width: 31%;
-    height: 44%;
-    opacity: 1;
-}
-
-.front,
-.back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    transition: transform 300ms;
-    transition: transform 300ms;
-    transition-timing-function: linear;
-    border-radius: 5px;
-}
-
-.front {
-    transform: rotateY(0deg);
-    text-align: center;
-    opacity:1;
-}
-.front h2{
-    background: linear-gradient(to right,red ,black,maroon);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 5px 5px 7px blue;
-    opacity: 1;
-}
-
-.back {
-    padding: 15px;
-    background: linear-gradient(to bottom right, yellow, orange, yellow);
-    transform: rotateY(180deg);
-    color: #2121e1;
-    align-items: center;
-    justify-content: center;
-}
-
-.card:hover .front {
-    transform: rotateY(-180deg);
-}
-
-.card:hover .back {
-    transform: rotateY(0deg);
-}
-
-#extra-info {
-    height: 85%;
-    width: 100%;
-    margin: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-.dtitle {
-    height: 15%;
-    width: 100%;
-    padding: 10px;
-    align-items: center;
-}
-
-.info {
-    margin: auto;
-    display: flex;
-    width: 70%;
-    align-items: top;
-    justify-content: center;
-}
-
-.infodiv {
-    float: left;
-    width: 48%;
-    padding: 10px;
-    border: 1px solid blue;
-    margin: 10px 10px 10px 10px;
-    background-color: #333;
-    color: white;
-}
-
-#ititle {
-    height: 14%;
-    width: 100%;
-    padding: 5px;
-    color: brown;
-    font-family: 'EB Garamond', serif;
-    font-size: 1em;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-#eicontent {
-    display: block;
-}
-
-.tcontent {
-    font-family: serif;
-    font-size: 1.7em;
-    line-height: 100%;
-}
-
-.tcontent:before {
-    content: "\27A3";
-    font-size: 1.3em;
-}
-
-.tcontent:hover {
-    text-shadow: 1px 1px 1px black;
-}
-
-#gangamap {
-    margin: 5% auto 1% auto;
-    height: 50%;
-    width: 50%;
-    border: 1px dashed blue;
-}
-
-#footer {
-    margin-top: 4%;
-    height: 15%;
-    width: 100%;
-    background: grey;
-    opacity: 0.2;
-    border: 1px solid blue;
-}
-
-.dest-container{
-    box-sizing: border-box;
-    display: block;
-}
-.dest-head{
-    height: 100px;
-    width: 100%;
-    padding-top: 20px;
-    align-items: center;
-    justify-content: center;
-}
-.dest-data-container{
-    margin: 10px;
-    margin-top: -20px;
-    align-items: center;
-    justify-content: center;
-}
-.dest-data{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.dest-img{
-    height: 300px;
-    width: 350px;
-    margin: 20px;
-    margin-left: 40px;
-}
-#di{
-    border-radius: 10px;
-}
-.dest-content{
-    height: 300px;
-    width: 1000px;
-    margin-left: 20px;
-    margin-top: -80px;
-}
-#dc{
-    font-size: 1.3em;
-}
-#dc:first-letter{
-    font-size:1.4em;
-}
-.dest-map{
-    height: 250px;
-    width: 450px;
-    margin: 15px auto;
-    border: 1px solid black;
-}
-.stl{
-    height: 350px;
-    width: 600px;
-    display: block;
-    text-decoration: none;
-    margin: 20px auto;
-}
-.stl-div{
-    height: 100%;
-    width: 100%;
-}
-.stl-head{
-    font-size: 3em;
-    text-align:center;
-}
-.cd{
-    width:60%;
-    margin: 3% auto;
-}
-.imgd{
-    height: 200px;
-    width: 200px;
-    margin:10px;
-    float: left;
-}
-.imgdiv{
-    height:100%;
-    width:100%;
-}
-.mfp-img{
-    height:600px;
-    width:600px;
-}
-
-@media only screen and (max-width: 768px) {
-    .navbar {
-        overflow: visible;
-    }
-    .menu {
-        width: 100%;
-        right: 0;
-        top: 65px;
-        background: white;
-        overflow: hidden;
-        max-height: 0;
-    }
-    .menu a {
-        display: block;
-        text-align: center;
-        padding: 10px;
-        margin: 0;
-    }
-    .btn {
-        display: block;
-        cursor: pointer;
-    }
-    .show {
-        max-height: 500px;
-    }
-    .container {
-        margin-top: 65px;
-    }
-    #attractions {
-        height: 320%;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    .atitle {
-        height: 5%;
-        width: 100%;
-        padding: 10px;
-        align-items: center;
-    }
-    #attractions-list {
-        height: 40%;
-        width: 100%;
-        align-items: center;
-    }
-    .card {
-        float: top;
-        height: 37.5%;
-        width: 90%;
-        border: 1px solid blue;
-    }
-    #extra-info {
-        height: 170%;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    .dtitle {
-        height: 6%;
-        width: 100%;
-        padding: 10px;
-        align-items: center;
-    }
-    .info {
-        display: block;
-        width: 100%;
-        align-items: center;
-    }
-    .infodiv {
-        width: 90%;
-        justify-content: left;
-        align-items: center;
-    }
-    #ititle {
-        height: 5%;
-    }
-    #gangamap {
-        margin: 5% auto 1% auto;
-        height: 40%;
-        width: 90%;
-        border: 1px dashed blue;
-    }
+.button {
+  background-color: #99ffcc;
+  width:200px;
+  border: 1px solid black;
+  border-radius: 15px 50px;
+  font-style: italic;
+  font-size:150%;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  color: Black
 }
